@@ -10,11 +10,26 @@ body {
 
 .header {
   background: white;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgb(255, 255, 255);
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  gap: 16px;
+  align-items: center;
 }
 
-.profile-image {
+.container-notifications {
+  display: flex;
+  
+  gap: 12px;
+}
+
+.container-links {
+  flex-grow: 2;
+}
+
+ .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
@@ -34,7 +49,7 @@ button {
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
-  padding: 8px 24px;
+  padding: 8px 20px;
 }
 
 a {
@@ -44,5 +59,13 @@ a {
 }
 
 ul {
+  display: flex;
   list-style-type: none;
-}
+  gap: 16px;
+  padding: 0;
+  margin: 0px;
+  justify-content: flex-start;
+  }
+  
+
+
